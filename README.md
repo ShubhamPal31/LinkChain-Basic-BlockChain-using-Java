@@ -6,7 +6,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="[https://www.imghippo.com/i/WOF0t1724669552.png](https://www.imghippo.com/i/WOF0t1724669552.png)" alt="project-screenshot" width="100%" height="400/">
+<img src="blockchainimg.png" alt="project-screenshot" width="100%" height="400/">
 
 <h2>🛠️ Installation Steps:</h2>
 
