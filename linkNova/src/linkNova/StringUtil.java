@@ -1,5 +1,6 @@
 package linkNova;
 import java.security.MessageDigest; // Import this to get access to the SHA256 algorithm.
+import com.google.gson.GsonBuilder;
 
 public class StringUtil {
 	
@@ -23,5 +24,16 @@ public class StringUtil {
 		catch(Exception e) {
 			throw new RuntimeException(e);
 		}
+	}
+	
+	//Short hand helper to turn Object into a json string
+	// converts the block chain object into a nicely formatted (pretty-printed) JSON string and assigns it to the blockchainJson variable
+	public static String getJson(Object o) {
+		return new GsonBuilder().setPrettyPrinting().create().toJson(o);
+	}
+	
+	//Returns difficulty string target, to compare to hash. eg difficulty of 5 will return "00000"  
+	public static String getDifficultyString(int difficulty) {
+		return new String(new char[difficulty]).replace('\0', '0');
 	}
 }
